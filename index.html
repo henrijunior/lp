@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="pt-BR" data-bs-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+    <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/node_modules/aos/dist/aos.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header com Theme Switcher -->
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="logo.svg" alt="Logo" height="30">
+            </a>
+            <button class="theme-toggle">
+                <i class="bi bi-moon-fill me-2"></i>
+                Mudar Tema
+            </button>
+        </div>
+    </nav>
+
+    <!-- Primeira Dobra -->
+    <section id="hero" class="min-vh-100 d-flex align-items-center">
+        <div class="hero-gradient"></div>
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6" data-aos="fade-right">
+                    <h1 class="mb-4">Transforme sua visão em realidade</h1>
+                    <p class="lead mb-5">Descubra como nossa solução pode revolucionar sua forma de trabalhar e alcançar resultados extraordinários.</p>
+                </div>
+                <div class="col-lg-6" data-aos="fade-left">
+                    <div class="card">
+                        <div class="card-body">
+                            <form id="leadForm" class="lead-form">
+                                <!-- Dados Pessoais -->
+                                <h3 class="mb-4">Dados Pessoais</h3>
+                                <div class="mb-3">
+                                    <input type="text" class="form-control" name="nome" placeholder="Nome Completo" required>
+                                </div>
+                                <div class="mb-3">
+                                    <input type="email" class="form-control" name="email" placeholder="Email Profissional" required>
+                                </div>
+                                <div class="mb-3">
+                                    <input type="tel" class="form-control" name="telefone" placeholder="Telefone/WhatsApp" required>
+                                </div>
+                                <div class="mb-3">
+                                    <input type="date" class="form-control" name="nascimento" required>
+                                </div>
+                                <div class="mb-3">
+                                    <select class="form-select" name="cargo" required>
+                                        <option value="">Cargo Atual</option>
+                                        <option value="ceo">CEO/Diretor</option>
+                                        <option value="gerente">Gerente</option>
+                                        <option value="coordenador">Coordenador</option>
+                                        <option value="analista">Analista</option>
+                                        <option value="outro">Outro</option>
+                                    </select>
+                                </div>
+
+                                <!-- Perguntas Qualificadoras -->
+                                <h3 class="mb-4 mt-5">Nos conte mais</h3>
+                                <div class="mb-3">
+                                    <select class="form-select" name="tamanho_empresa" required>
+                                        <option value="">Tamanho da sua empresa</option>
+                                        <option value="1-10">1-10 funcionários</option>
+                                        <option value="11-50">11-50 funcionários</option>
+                                        <option value="51-200">51-200 funcionários</option>
+                                        <option value="201+">201+ funcionários</option>
+                                    </select>
+                                </div>
+                                <div class="mb-3">
+                                    <select class="form-select" name="setor" required>
+                                        <option value="">Setor de atuação</option>
+                                        <option value="tecnologia">Tecnologia</option>
+                                        <option value="financeiro">Financeiro</option>
+                                        <option value="saude">Saúde</option>
+                                        <option value="educacao">Educação</option>
+                                        <option value="outro">Outro</option>
+                                    </select>
+                                </div>
+                                <div class="mb-3">
+                                    <select class="form-select" name="desafio" required>
+                                        <option value="">Principal desafio atual</option>
+                                        <option value="produtividade">Aumentar Produtividade</option>
+                                        <option value="custos">Reduzir Custos</option>
+                                        <option value="qualidade">Melhorar Qualidade</option>
+                                        <option value="inovacao">Implementar Inovação</option>
+                                    </select>
+                                </div>
+                                <div class="mb-3">
+                                    <select class="form-select" name="prazo" required>
+                                        <option value="">Prazo para implementação</option>
+                                        <option value="imediato">Imediato</option>
+                                        <option value="3meses">Próximos 3 meses</option>
+                                        <option value="6meses">Próximos 6 meses</option>
+                                        <option value="12meses">Próximo ano</option>
+                                    </select>
+                                </div>
+                                <div class="mb-3">
+                                    <select class="form-select" name="investimento" required>
+                                        <option value="">Faixa de investimento prevista</option>
+                                        <option value="ate10k">Até R$ 10.000</option>
+                                        <option value="10k-50k">R$ 10.000 - R$ 50.000</option>
+                                        <option value="50k-100k">R$ 50.000 - R$ 100.000</option>
+                                        <option value="100k+">R$ 100.000+</option>
+                                    </select>
+                                </div>
+                                <div class="mb-4">
+                                    <textarea class="form-control" name="objetivos" rows="3" placeholder="Quais são seus principais objetivos com nossa solução?" required></textarea>
+                                </div>
+                                <button type="submit" class="btn btn-primary w-100">
+                                    Baixar E-book Exclusivo
+                                    <i class="bi bi-arrow-right ms-2"></i>
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Resto das seções permanecem as mesmas -->
+    <!-- Segunda Dobra - Compromissos -->
+    <section id="compromissos" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-5" data-aos="fade-up">Nossos Compromissos</h2>
+            <div class="row g-4">
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h3>Compromisso 1</h3>
+                            <p>Descrição do compromisso</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h3>Compromisso 2</h3>
+                            <p>Descrição do compromisso</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h3>Compromisso 3</h3>
+                            <p>Descrição do compromisso</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Terceira Dobra - Casos de Sucesso -->
+    <section id="casos" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-5" data-aos="fade-up">Casos de Sucesso</h2>
+            <div class="row" id="casos-container">
+                <!-- Casos de sucesso serão inseridos aqui dinamicamente -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Quarta Dobra - Preços -->
+    <section id="precos" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-5" data-aos="fade-up">Planos e Preços</h2>
+            <div class="row g-4" id="precos-container">
+                <!-- Planos serão inseridos aqui dinamicamente -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Quinta Dobra - FAQ -->
+    <section id="faq" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-5" data-aos="fade-up">Perguntas Frequentes</h2>
+            <div class="accordion" id="faqAccordion">
+                <!-- FAQs serão inseridas aqui dinamicamente -->
+            </div>
+        </div>
+    </section>
+
+    <script type="module" src="/main.js"></script>
+</body>
+</html>

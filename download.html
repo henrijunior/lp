@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-BR" data-bs-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Acesso ao Conteúdo Exclusivo</title>
+    <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/node_modules/aos/dist/aos.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="/">
+                <img src="logo.svg" alt="Logo" height="30">
+            </a>
+            <button class="theme-toggle">
+                <i class="bi bi-moon-fill me-2"></i>
+                Mudar Tema
+            </button>
+        </div>
+    </nav>
+
+    <section class="min-vh-100 d-flex align-items-center">
+        <div class="hero-gradient"></div>
+        <div class="container py-5">
+            <div class="row justify-content-center">
+                <div class="col-lg-8" data-aos="fade-up">
+                    <div class="card">
+                        <div class="card-body text-center p-5">
+                            <h1 class="mb-4">Parabéns!</h1>
+                            <p class="lead mb-5">Você agora tem acesso ao nosso conteúdo exclusivo.</p>
+                            
+                            <div class="row g-4">
+                                <!-- E-book -->
+                                <div class="col-md-6">
+                                    <div class="content-card p-4 h-100">
+                                        <div class="mb-4">
+                                            <i class="bi bi-book fs-1"></i>
+                                        </div>
+                                        <h3>E-book Exclusivo</h3>
+                                        <p>Guia completo com todas as estratégias e dicas práticas.</p>
+                                        <div class="mb-4">
+                                            <span class="badge bg-success mb-3">PDF - 15MB</span>
+                                        </div>
+                                        <button class="btn btn-primary download-btn" data-type="ebook">
+                                            Baixar E-book
+                                            <i class="bi bi-download ms-2"></i>
+                                        </button>
+                                    </div>
+                                </div>
+
+                                <!-- Vídeo Aula -->
+                                <div class="col-md-6">
+                                    <div class="content-card p-4 h-100">
+                                        <div class="mb-4">
+                                            <i class="bi bi-play-circle fs-1"></i>
+                                        </div>
+                                        <h3>Vídeo Aula Bônus</h3>
+                                        <p>Masterclass exclusiva com dicas práticas e exemplos.</p>
+                                        <div class="mb-4">
+                                            <span class="badge bg-primary mb-3">45 minutos</span>
+                                        </div>
+                                        <button class="btn btn-primary watch-btn" data-type="video">
+                                            Assistir Agora
+                                            <i class="bi bi-play-fill ms-2"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Bônus Adicional -->
+                            <div class="bonus-section mt-5 p-4 rounded-lg" data-aos="fade-up">
+                                <div class="bonus-content">
+                                    <h3 class="mb-3">Bônus Especial</h3>
+                                    <p>Templates exclusivos e recursos adicionais para acelerar seus resultados.</p>
+                                    <button class="btn btn-outline-primary mt-3" data-type="bonus">
+                                        Acessar Bônus
+                                        <i class="bi bi-gift ms-2"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script type="module" src="/download.js"></script>
+</body>
+</html>
